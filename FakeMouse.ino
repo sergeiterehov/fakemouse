@@ -25,13 +25,13 @@ void loop() {
   float a = 6.28 * millis() / 1000.0;
 
   int x = int(42.0 * cos(a));
-  int y = int(42.0 * sin(a) * sin(a));
+  int y = int(42.0 * sin(a) * cos(a));
 
   Mouse.move(x - px, y - py, 0);
 
   px = x;
   py = y;
 
-  delay(50);
+  delay(25);
 }
 #endif /* ARDUINO_USB_MODE */
