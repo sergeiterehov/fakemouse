@@ -32,6 +32,8 @@ void setup() {
 
   // initialize mouse control:
   Mouse.begin();
+  USB.productName(USB_PRODUCT);
+  USB.manufacturerName(USB_MANUFACTURER);
   USB.begin();
 }
 
